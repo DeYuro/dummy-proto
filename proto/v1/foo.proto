@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package dummy.v1.foo;
+option go_package = "proto/v1/dummy";
+
+import "proto/v1/structures.proto";
+
+service FooService {
+  rpc reverse(ReverseRequest) returns (ReverseResponse);
+  rpc getBar(GetBarRequest) returns (GetBarResponse);
+}
+
+message ReverseRequest {
+  string text = 1;
+}
+
+message ReverseResponse {
+  string reversed_text = 1;
+}
+
+message GetBarRequest {
+}
+
+message GetBarResponse {
+  structures.Bar bar = 1;
+}
