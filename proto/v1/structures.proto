@@ -1,7 +1,6 @@
 syntax = "proto3";
 
 package dummy.v1.structures;
-option go_package = "proto/v1/dummy";
 
 message Bar {
   uint32 id = 1;
