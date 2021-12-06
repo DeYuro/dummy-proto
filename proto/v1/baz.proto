@@ -12,4 +12,5 @@ message StubRequest {
 }
 
 message StubResponse {
+  repeated structures.Bar bar = 1;
 }
