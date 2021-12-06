@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package dummy.v1.baz;
+package stub.v1.baz;
 
-import "dummy-proto/proto/v1/structures.proto";
+import "stubproto/proto/v1/structures.proto";
 
 service FooService {
   rpc stub(StubRequest) returns (StubResponse);
