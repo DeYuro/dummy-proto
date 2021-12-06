@@ -3,7 +3,7 @@ syntax = "proto3";
 package dummy.v1.foo;
 option go_package = "proto/v1/dummy";
 
-import "proto/v1/structures.proto";
+import "dummy-proto/proto/v1/structures.proto";
 
 service FooService {
   rpc reverse(ReverseRequest) returns (ReverseResponse);
