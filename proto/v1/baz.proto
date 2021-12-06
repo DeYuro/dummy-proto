@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package dummy.v1.baz;
+
+import "proto/v1/structures.proto";
+
+service FooService {
+  rpc stub(StubRequest) returns (StubResponse);
+}
+
+message StubRequest {
+}
+
+message StubResponse {
+}
